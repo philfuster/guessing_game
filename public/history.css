@@ -1,0 +1,57 @@
+@import url('main.css');
+table,
+th,
+td {
+
+    border: 1px solid black;
+    text-align: center;
+
+}
+
+thead {
+	text-align: center;
+}
+.table-row:hover, .clickable-row:hover {
+	background-color: lightblue;
+    border-color: greenyellow;
+    cursor: pointer;
+}
+
+li, h3 {
+    list-style: none;
+    padding: 1rem;
+    background-color: yellowgreen;
+    box-shadow: 0 3px 7px gray;
+    font-size: 1.8rem;
+    text-align: center;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    max-width: 500px;
+    padding: 1rem;
+    background-color: indianred;
+    color: lavenderblush;
+    text-shadow: -1px 0 yellowgreen, 0 1px yellowgreen, 1px 0 yellowgreen, 0 -1px yellowgreen;
+    border-radius: 10px;
+}
+
+
+
+#date {
+    background-image: linear-gradient(to bottom right,indianred, yellowgreen);
+}
+
+.nav-link {
+    display: block;
+    margin-top: 10px;
+    max-width:10rem;
+    min-width: 10rem;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    background-color: turquoise;
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-align: center;
+}

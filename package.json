@@ -1,0 +1,17 @@
+{
+    "name": "guessing-game",
+    "author": "Philip Fuster",
+    "dependencies": {
+        "connect": "*",
+        "morgan": "*",
+        "serve-static": "*",
+        "ejs": "*",
+        "body-parser": "*",
+        "cookie-parser": "*",
+        "express-session": "*",
+        "path": "*",
+        "mongodb": "*",
+        "dateformat": "*",
+        "assert": "*"
+    }
+}

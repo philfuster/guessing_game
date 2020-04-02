@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Guessing Game - pure JavaScript</title>
+        <link rel="stylesheet" href="history.css">
+        <meta charset="UTF-8"/>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="guess_history.js"></script>
+    </head>
+    <body>
+        <div class="content">
+            <table id="history_table" >
+                <caption>PAF Guessing Game History</caption>
+                <thead>
+                    <th>Date</th>
+                    <th>Secret Number</th>
+                    <th># of Guesses</th>
+                </thead>
+                <%history.forEach((game, i)=>{ %>
+                    <tr class="table-row" data-objectid="<%=game._id%>">
+                        <td id="<%=i%>"><%=game.time_stamp%></td>
+                        <td><%=game.secret_number%></td>
+                        <td><%=game.guesses.length%></td>
+                    </tr>
+                <%});%>
+            </table>
+            <section id="game_detail" class="hidden">
+                <h1 id="date"></h1>
+                <div id="secret-and-guess">
+                    <div class="text-box" id="secret_number">
+                        <h2>Secret Number</h2>
+                        <h3 id="secret"></h3>
+                    </div>
+                    <div class="text-box">
+                        <h2># of Guesses</h2>
+                        <h3 id="num_guesses"></h3>
+                    </div>
+                </div>
+                <div id="guesses">
+                    <h1>Guesses</h1>
+                    <ul>
+    
+                    </ul>
+                </div>
+            </section>
+            <nav>
+                <a class="nav-link" href="/start">Play</a>
+                <a id="history" class="nav-link hidden">History</a>
+            </nav>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+@import url("main.css");
+#start_page {
+	display:flex;
+	flex-direction: row;
+	padding: 3rem;
+	justify-content: center;
+}
+
+.input {
+	align-items: center;
+	display:flex;
+	flex-direction: column;
+}
+
+.instructions {
+	background-color:#FFFFB8;
+	border-color:	#E6B800;
+	width:250px;
+	border-width: 2px;
+	border-radius: 3px;
+	padding: 2rem;
+}
+
+.highGuess {
+	background-color:#A64D4D;
+	border-color:	#8D1919;
+}
+.lowGuess {
+	background-color:#8099E6;
+	border-color:	#335CD6;
+}

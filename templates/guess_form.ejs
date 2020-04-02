@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Guessing Game - pure JavaScript</title>
+        <link rel="stylesheet" href="guess.css"/>
+        <meta charset="UTF-8"/>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="guess_form.js"></script>
+    </head>
+
+    <body>
+        <div class="content">
+            <section id="start_page">
+                <div class="instructions">
+                    <p>
+                        Welcome to our guessing game. The server is thinking of a number between 1 and 10
+                    </p>
+                </div>
+                <form>
+                    <div class="input">
+                        <label for="guess">Your guess</label>
+                        <input type="text" name="guess"/>
+                        <button id="guess" type="button">Guess</button>
+                        <ul>
+                            
+                        </ul>
+                    </div>
+                </form>
+            </section>
+            <section id="success_page" class="hidden">
+                <h1> Fantastic!</h1>
+                <a class="nav-link" id="play_again" href="#" >play again</a>
+            </section>
+            <nav>
+                <a href="/history" class="nav-link">Game History</a>
+            </nav>
+        </div>
+    </body>
+</html>
