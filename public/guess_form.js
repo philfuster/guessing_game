@@ -35,8 +35,10 @@ async function handle_guess() {
         },
         body: JSON.stringify({guess: guess})
     });
-    let json = await response.json();
+    let json =
+     await response.json();
     console.log(`Response json from guess: ${json}`);
+    
     if( json.result == 'success') {
         showSuccess();
         return;
