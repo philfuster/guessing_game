@@ -1,11 +1,11 @@
 $(document).ready ( function () {
     // setup event handler
     $('#play_again').click(init_game);
-    $('#guess').on("click", handle_guess);
+    $('#guess_input').on("click", handle_guess);
     $('form').on('keypress', function(e){
         if(e.which === 13) {
             e.preventDefault();
-            $('#guess').click();
+            $('#guess_input').click();
         } else {
             return true;
         }
@@ -38,7 +38,7 @@ async function handle_guess() {
     let json =
      await response.json();
     console.log(`Response json from guess: ${json}`);
-    
+
     if( json.result == 'success') {
         showSuccess();
         return;

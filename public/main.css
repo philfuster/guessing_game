@@ -23,7 +23,7 @@ form {
 }
 label {
 	font-weight: 800;
-	display: block;
+	display: inline;
 	align-self: left;
 }
 
