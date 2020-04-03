@@ -15,34 +15,26 @@ body {
 }
 
 form {
-	text-align:right;
-	padding:1em;
-	align-items: center;
-	justify-items: center;
-	display:flex;
+	padding:1rem;	
 }
 label {
 	font-weight: 800;
-	display: inline;
-	align-self: left;
+	display: block;
 }
 
 .nav-link, button {
 	display: block;
-    margin-top: 10px;
-    max-width: max-content;
     border-radius: 10px;
     padding: 1.5rem 2rem;
     background-color: turquoise;
     font-weight: 800;
     font-size: 1.5rem;
-	text-align: center;
-	align-self: center;
 	color: palevioletred;
 	text-decoration: none;
 }
 button {
 	padding: .75rem 1.5rem;
+	font-size: 1.25rem;
 }
 .nav-link:hover, button:hover {
 	background-color: palevioletred;

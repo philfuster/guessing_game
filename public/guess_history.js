@@ -31,7 +31,7 @@ $(document).ready(function() {
         }
         console.log("here");
     })
-    $('#history').on("click", showHistory);
+    $('#history').on("click", showHistory).hide();
     
 
     function showHistory() {
